@@ -1,5 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="w3-sidebar w3-bar-block" id="sidebar" style="width:20%">
+  <h2>Navigation</h2>
+  {{#link-to "map"}}<a class="w3-bar-item w3-button">Map View</a>{{/link-to}}
+  {{#link-to "favorite-list"}}<a class="w3-bar-item w3-button">List view</a>{{/link-to}}
+  {{#link-to "search"}}<a class="w3-bar-item w3-button">Search</a>{{/link-to}}
+</div>
+
+<div style="margin-left:20%">
+  <h1>My favorite restaraunts</h1>
+</div>
 
 {{outlet}}
