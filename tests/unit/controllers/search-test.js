@@ -1,12 +1,13 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:search', 'Unit | Route | search', {
+moduleFor('controller:search', 'Unit | Controller | search', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
   needs: ['service:yelp']
 });
 
+// Replace this with your real tests.
 test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
+  let controller = this.subject();
+  assert.ok(controller);
 });

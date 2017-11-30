@@ -1,1 +1,16 @@
 {{outlet}}
+
+
+<div style="margin-left:20%">
+  <h2>Search</h2>
+  <hr>
+
+  <form onsubmit={{action "onButtonClick"}}>
+    <h3>Restaraunt</h3>
+    {{input type="text" value=restaraunt placeholder="Ex: Bestia"}}
+    <h3>Location</h3>
+    {{input type="text" value=location placeholder="Ex: Los Angeles"}}
+    <button type="submit">Search</button>
+  </form>
+
+</div>
