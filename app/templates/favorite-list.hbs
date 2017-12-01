@@ -12,12 +12,14 @@
           Location: {{restaraunt.location}}
         </div>
         <div>
-        {{visited-button
-          loading=false
-          id=restaraunt.id
-          visited=restaraunt.visited
-          onclick=(action "switchVisitStatus")}}
+          {{visited-button
+            loading=false
+            id=restaraunt.id
+            visited=restaraunt.visited
+            onclick=(action "switchVisitStatus")}}
         </div>
+          {{delete-button
+            restarauntId=restaraunt.id}}
     </div>
   {{/each}}
 </div>
