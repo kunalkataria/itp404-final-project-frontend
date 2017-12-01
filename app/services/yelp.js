@@ -3,7 +3,10 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   getRestarauntsNearLocation(restaraunt, location) {
-    console.log('hello there!!');
+    /*
+      Wanted to get Yelp API working to search for restaraunts but since they
+      do not allow CORS I had trouble getting it to work.
+    */
     $.ajax({
       method: 'GET',
       url: 'https://api.yelp.com/v3/businesses/search?term=leos&location=losangeles/',
@@ -12,11 +15,9 @@ export default Ember.Service.extend({
         'Access-Control-Allow-Origin': '*'
       },
     }).then(function(response) {
-      console.log('succcess');
-      console.log(response);
+
     }, function(response) {
-      console.log('hello');
-      console.log(response);
+
     });
 
   }
