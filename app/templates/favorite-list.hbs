@@ -1,9 +1,15 @@
-<div style="margin-left:20%">
-  <h2>List:</h2>
 
-  <ul>
-    <li>Restaraunt would go here</li>
-  </ul>
+<div style="margin-left:20%">
+    {{#each model as |restaraunt|}}
+      <div class="restaraunt">
+        <div>
+          Name: {{restaraunt.name}}
+        </div>
+        <div>
+          Location: {{restaraunt.location}}
+        </div>
+    </div>
+  {{/each}}
 </div>
 
 {{outlet}}

@@ -1,1 +1,0 @@
-/Users/kunal/Documents/College/usc/Fall 2017/itp404/final-project/tmp/funnel-input_base_path-m1AXN9N2.tmp/routes/favorite-list.js
