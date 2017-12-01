@@ -14,11 +14,12 @@ export default Ember.Service.extend({
       }
     }).then(function(response) {
       toastr.success(restaraunt + ' was successfully added to your favorites');
+    }, function(response) {
+      toastr.error('something went wrong, was not able to add ' + restaraunt + ' to your favorites');
     });
-
   },
 
   removeFavorite(id) {
-    
+
   }
 });
