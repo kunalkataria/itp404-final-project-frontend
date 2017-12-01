@@ -347,14 +347,6 @@ define('final-project/services/favorites', ['exports'], function (exports) {
     removeFavorite: function removeFavorite(id) {}
   });
 });
-define('final-project/services/newyelp', ['exports'], function (exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = Ember.Service.extend({});
-});
 define('final-project/services/yelp', ['exports'], function (exports) {
   'use strict';
 
