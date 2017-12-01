@@ -1,7 +1,11 @@
-{{#if visited}}
-  <i class="fa fa-check-circle" aria-hidden="true"></i>
-  Visited
+{{#if loading}}
+  <div class="spinner"></div>
 {{else}}
-  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-  Not Visited
+  {{#if visited}}
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+    Visited
+  {{else}}
+    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+    Not Visited
+  {{/if}}
 {{/if}}
