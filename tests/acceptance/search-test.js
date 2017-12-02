@@ -21,7 +21,7 @@ test('create new favorite restaraunt', function(assert) {
 
   // check to see that the input boxes are cleared out after submitting
   andThen(function() {
-    assert.equal('#restaraunt', '');
-    assert.equal('#location', '');
+    assert.equal(find('#restaraunt').text(), '');
+    assert.equal(find('#location').text(), '');
   });
 });

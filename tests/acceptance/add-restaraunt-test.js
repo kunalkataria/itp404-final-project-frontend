@@ -8,11 +8,11 @@ test('visiting /add-restaraunt', function(assert) {
 
   fillIn('#restaraunt', 'Bestia');
   fillIn('#location', '2121 E 7th Pl, Los Angeles, CA 90021')
-  click('button.submit');
+  click('#add');
 
   visit('/favorite-list');
 
   andThen(function() {
-    assert.equal(currentURL(), '/add-restaraunt');
+    assert.equal(currentURL(), '/favorite-list');
   });
 });
