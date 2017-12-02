@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 export default Ember.Service.extend({
   addFavorite(restaraunt, location) {
-    console.log('adding favorite');
     $.ajax({
       type: 'POST',
       url: 'http://localhost:3000/api/favorites',
@@ -18,8 +17,4 @@ export default Ember.Service.extend({
       toastr.error('something went wrong, was not able to add ' + restaraunt + ' to your favorites');
     });
   },
-
-  removeFavorite(id) {
-
-  }
 });

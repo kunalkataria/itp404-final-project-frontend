@@ -5,7 +5,6 @@ export default Ember.Controller.extend({
 
   actions: {
     switchVisitStatus(newVisitStatus) {
-      console.log('hello there');
     }
   }
 });
