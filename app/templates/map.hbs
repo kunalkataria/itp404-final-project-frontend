@@ -1,8 +1,7 @@
 <div style="margin-left:20%">
-  <div id="map"></div>
   <h2>Map</h2>
-
   <h4>Find all your favorite restaraunts on the map, perfect for when you're going out</h4>
+  <hr>
 
   {{#if model.length}}
     {{#g-map markersFitMode='live' as |context|}}
@@ -18,7 +17,5 @@
       Add some restaraunts in the search tab to get started
   {{/if}}
 </div>
-
-
 
 {{outlet}}
