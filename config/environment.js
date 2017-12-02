@@ -45,7 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHOST = '';
+    ENV.apiHOST = 'https://itp404-kunal-api.herokuapp.com/api';
   }
 
   return ENV;
