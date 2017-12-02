@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ENV from 'final-project/config/environment';
 
 export default Ember.Route.extend({
   titleToken: 'Map of restaraunts',
@@ -6,7 +7,7 @@ export default Ember.Route.extend({
   model(params) {
     return $.ajax({
       type: 'GET',
-      url: 'http://localhost:3000/api/favorites',
+      url: `${ENV.apiHOST}/favorites/`,
     });
   }
 });

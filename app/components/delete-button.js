@@ -1,11 +1,12 @@
 import Ember from 'ember';
+import ENV from 'final-project/config/environment';
 
 export default Ember.Component.extend({
   click() {
     let id = this.get('restarauntId');
     $.ajax({
       type: 'DELETE',
-      url: `http://localhost:3000/api/favorites/${id}`,
+      url: `${ENV.apiHOST}/favorites/${id}`,
     }).then(function(response) {
       /* will force the page to refresh and get the new list without the element
         that was just deleted */

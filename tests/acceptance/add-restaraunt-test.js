@@ -4,7 +4,8 @@ import moduleForAcceptance from 'final-project/tests/helpers/module-for-acceptan
 moduleForAcceptance('Acceptance | add restaraunt');
 
 // tests that after you insert a restaraunt, you can see it on the favorites list
-test('visiting /add-restaraunt', function(assert) {
+// test tests on an empty api database, test does not pass if database is populated
+test('visiting /favorite-list', function(assert) {
   visit('/search');
 
   fillIn('#restaraunt', 'Bestia');

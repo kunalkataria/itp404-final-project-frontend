@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ENV from 'final-project/config/environment';
 
 export default Ember.Component.extend({
   click() {
@@ -7,7 +8,7 @@ export default Ember.Component.extend({
     this.set('loading', true);
     $.ajax({
       type: 'PATCH',
-      url: `http://localhost:3000/api/favorites/${id}`,
+      url: `${ENV.apiHOST}/favorites/${id}`,
       data: {
         visited: !visited,
       }

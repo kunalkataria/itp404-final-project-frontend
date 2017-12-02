@@ -1,11 +1,12 @@
 import Ember from 'ember';
+import ENV from 'final-project/config/environment';
 import $ from 'jquery';
 
 export default Ember.Service.extend({
   addFavorite(restaraunt, location) {
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/api/favorites',
+      url: `${ENV.apiHOST}/favorites`,
       data: {
         name: restaraunt,
         location: location,
