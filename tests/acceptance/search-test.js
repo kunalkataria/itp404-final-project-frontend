@@ -19,7 +19,7 @@ test('create new favorite restaraunt', function(assert) {
   fillIn('#location', '2121 E 7th Pl, Los Angeles, CA 90021')
   click('button.submit');
   andThen(function() {
-    assert.equal('input.restaraunt', 'Bestia');
-    assert.equal('input.restaraunt', '2121 E 7th Pl, Los Angeles, CA 90021');
+    assert.equal('#restaraunt', '');
+    assert.equal('#location', '');
   });
 });

@@ -9,6 +9,8 @@ export default Ember.Controller.extend({
       let restaraunt = this.get('restaraunt');
       let location = this.get('location');
       this.get('favorites').addFavorite(restaraunt, location);
+      $('#restaraunt').val('');
+      $('#location').val('');
     }
   }
 });
