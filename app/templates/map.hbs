@@ -4,6 +4,9 @@
   <hr>
 
   {{#if model.length}}
+    <p>
+      Select a restaraunt to view details
+    </p>
     {{#g-map markersFitMode='live' as |context|}}
       {{#each model as |restaraunt|}}
         {{g-map-address-marker context onClick=(action "handleClick" restaraunt) address=restaraunt.location}}

@@ -3,14 +3,18 @@
 
 <div style="margin-left:20%">
   <h2>Search</h2>
+  <h4>
+    Search is currently broken, you have to manually search on yelp
+    <a href="https://www.yelp.com" target="_blank">here</a>
+  </h4>
   <hr>
 
   <form onsubmit={{action "onButtonClick"}}>
     <h3>Restaraunt</h3>
     {{input id="restaraunt" type="text" value=restaraunt placeholder="Ex: Bestia"}}
-    <h3>Location</h3>
+    <h3>Location (the more specific, the better)</h3>
     {{input id="location" type="text" value=location placeholder="Ex: Los Angeles"}}
-    <button id="add" type="submit">Search</button>
+    <button id="add" type="submit">Add to favorites</button>
   </form>
 
 </div>
