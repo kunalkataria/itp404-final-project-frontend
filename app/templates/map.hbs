@@ -2,15 +2,21 @@
   <div id="map"></div>
   <h2>Map</h2>
 
-  {{#g-map markersFitMode='live' as |context|}}
-    {{#each model as |restaraunt|}}
-      {{g-map-address-marker context onClick=(action "handleClick" restaraunt) address=restaraunt.location}}
-    {{/each}}
+  <h4>Find all your favorite restaraunts on the map, perfect for when you're going out</h4>
 
-  {{/g-map}}
-
-  Details:
-  {{details}}
+  {{#if model.length}}
+    {{#g-map markersFitMode='live' as |context|}}
+      {{#each model as |restaraunt|}}
+        {{g-map-address-marker context onClick=(action "handleClick" restaraunt) address=restaraunt.location}}
+      {{/each}}
+    {{/g-map}}
+    <hr>
+    Details
+    <hr>
+    {{details}}
+    {{else}}
+      Add some restaraunts in the search tab to get started
+  {{/if}}
 </div>
 
 

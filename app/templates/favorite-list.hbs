@@ -1,25 +1,27 @@
-{{#if loading}}
-  <div class="loader">Loading...</div>
-{{/if}}
 
 <div style="margin-left:20%">
-    {{#each model as |restaraunt|}}
-      <div class="restaraunt">
-        <div>
-          Name: {{restaraunt.name}}
-        </div>
-        <div>
-          Location: {{restaraunt.location}}
-        </div>
-        <div>
-          {{visited-button
-            loading=false
-            id=restaraunt.id
-            visited=restaraunt.visited
-            onclick=(action "switchVisitStatus")}}
-        </div>
-          {{delete-button
-            restarauntId=restaraunt.id}}
+
+  <h3>Here you can see all your favorite restaraunts in convenient list form</h3>
+  <hr>
+
+  {{#each model as |restaraunt|}}
+    <div class="restaraunt">
+      <div>
+        Name: {{restaraunt.name}}
+      </div>
+      <div>
+        Location: {{restaraunt.location}}
+      </div>
+      <div>
+        {{visited-button
+          loading=false
+          id=restaraunt.id
+          visited=restaraunt.visited
+          onclick=(action "switchVisitStatus")}}
+      </div>
+        {{delete-button
+          restarauntId=restaraunt.id}}
+      <hr>
     </div>
   {{/each}}
 </div>

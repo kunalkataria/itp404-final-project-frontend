@@ -13,6 +13,7 @@ moduleForAcceptance('Acceptance | search');
 
 }); */
 
+// tests that when you make a new restaraunt that the input boxes are cleared out
 test('create new favorite restaraunt', function(assert) {
   visit('/search');
   fillIn('#restaraunt', 'Bestia');
