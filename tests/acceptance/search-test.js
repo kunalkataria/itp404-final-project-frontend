@@ -17,7 +17,7 @@ test('create new favorite restaraunt', function(assert) {
   visit('/search');
   fillIn('#restaraunt', 'Bestia');
   fillIn('#location', '2121 E 7th Pl, Los Angeles, CA 90021')
-  click('button.submit');
+  click('#add');
 
   // check to see that the input boxes are cleared out after submitting
   andThen(function() {

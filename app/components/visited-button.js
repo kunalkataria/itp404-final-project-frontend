@@ -4,7 +4,6 @@ export default Ember.Component.extend({
   click() {
     let visited = this.get('visited');
     let id = this.get('id');
-    console.log(id);
     this.set('loading', true);
     $.ajax({
       type: 'PATCH',

@@ -15,9 +15,9 @@ export default Ember.Service.extend({
         'Access-Control-Allow-Origin': '*'
       },
     }).then(function(response) {
-
+      // do something with response
     }, function(response) {
-
+      // handle error state
     });
 
   }
